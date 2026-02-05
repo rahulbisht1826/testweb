@@ -353,6 +353,21 @@
             align-items: center;
             gap: 15px;
         }
+
+        @media (max-width: 480px) {
+            .login-container {
+                padding: 30px 20px;
+            }
+
+            .login-header h2 {
+                font-size: 1.5rem;
+            }
+
+            .google-modal {
+                width: 90%;
+                padding: 30px 20px;
+            }
+        }
     </style>
 </head>
 
@@ -446,24 +461,32 @@
             <p>Choose an account to continue to BMS College</p>
 
             <div class="google-account-list">
-                <div class="google-account-item" onclick="googleLogin('Rahul User', 'rahul@gmail.com')">
-                    <div class="google-avatar purple">R</div>
+                <div class="google-account-item" onclick="googleLogin('User 1', 'user1@gmail.com')">
+                    <div class="google-avatar purple">U</div>
                     <div class="account-info">
-                        <h4>Rahul User</h4>
-                        <span>rahul@gmail.com</span>
+                        <h4>User 1</h4>
+                        <span>user1@gmail.com</span>
                     </div>
                 </div>
-                <div class="google-account-item" onclick="googleLogin('Student Account', 'student123@gmail.com')">
-                    <div class="google-avatar green">S</div>
+                <div class="google-account-item" onclick="googleLogin('User 2', 'user2@gmail.com')">
+                    <div class="google-avatar green">U</div>
                     <div class="account-info">
-                        <h4>Student Account</h4>
-                        <span>student123@gmail.com</span>
+                        <h4>User 2</h4>
+                        <span>user2@gmail.com</span>
+                    </div>
+                </div>
+                <div class="google-account-item" onclick="googleLogin('User 3', 'user3@gmail.com')">
+                    <div class="google-avatar" style="background-color: #f06292;">U</div>
+                    <div class="account-info">
+                        <h4>User 3</h4>
+                        <span>user3@gmail.com</span>
                     </div>
                 </div>
                 <div class="use-another">
                     <div class="google-avatar"
                         style="width: 28px; height: 28px; background: transparent; color: #5f6368; font-size: 1rem; margin-right: 15px;">
-                        <i class="fa-solid fa-user-plus"></i></div>
+                        <i class="fa-solid fa-user-plus"></i>
+                    </div>
                     Use another account
                 </div>
             </div>
